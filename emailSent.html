@@ -101,6 +101,25 @@
 
             margin-top: 0;
             margin-bottom: 40px;
+            
+        }
+
+        .email-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            border-radius: 50%;
+
+            background-color: var(--text-input-field);
+            
+            width: 120px;
+            height: 120px;         
+
+        }
+
+        .email-image img {
+            width: 70px;
         }
 
 
@@ -136,7 +155,9 @@
             <img src="./icons/email.svg" alt="icon email sent" class="emailSent">
         </div>
         <button class="loginButton">Login</button>      
-        <p>Didn't receive the email? <spam>Resend</spam></p>
+        <p class="resend">
+            <spam>Didn't receive the email?</spam> <a href="/">Resend</a>
+        </p>
     </div>
 </div>
 </body>
