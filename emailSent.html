@@ -53,7 +53,7 @@
 
         }
 
-        .newPassContainer {
+        .emailSentContainer {
             display: grid;
             place-items: center;
 
@@ -61,7 +61,7 @@
             height: 100vh;
         }
 
-        .newPassInterface {
+        .emailContent {
             display: grid;
             grid-template-rows: auto 1fr auto;
 
@@ -103,34 +103,6 @@
             margin-bottom: 40px;
         }
 
-        .formContainer {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .form__label {
-            font-size: var(--small-text);
-            font-weight: var(--bold-text);
-
-            color: var(--dark);
-
-            margin-bottom: 4px;
-        }
-
-        .form__input {
-            font-size: var(--medium-text);
-            font-weight: var(--light-weight);
-
-            color: var(--dark);
-            background-color: var(--text-input-field);
-
-            border: none;
-            border-radius: 8px;
-
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-        }
 
         .form__submit {
             font-size: var(--medium-text);
@@ -154,14 +126,16 @@
 </head>
 
 <body>
-<div class="newPassContainer">
-    <div class="newPassInterface">
+<div class="emailSentContainer">
+    <div class="emailContent">
         <img class="logo" src="./logos/logo_yard_sale.svg" alt="logo Yard Sale">
         <h1 class="title">Email has been sent!</h1>
         <p class="description">Please check your inbox for instructions on how to reset the password</p>
-        <div class="formContainer">
-            <input class="form__submit" type="submit" name="submit" value="Login">
+        <input class="form__submit" type="submit" name="submit" value="Login">
+        <div class="email-image">
+            <img src="./icons/email.svg" alt="icon email sent" class="emailSent">
         </div>
+        <p>Didn't receive the email? <spam>Resend</spam></p>
     </div>
 </div>
 </body>
