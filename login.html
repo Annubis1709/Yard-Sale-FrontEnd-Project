@@ -53,7 +53,7 @@
 
         }
 
-        .loginContainer {
+        .container {
             display: grid;
             place-items: center;
 
@@ -61,7 +61,7 @@
             height: 100vh;
         }
 
-        .loginInterface {
+        .formContainer {
             display: grid;
             grid-template-rows: auto 1fr auto;
 
@@ -76,7 +76,7 @@
             margin-bottom: 40px;
         }
 
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 640px) {
             .logo {
                 display: block;
             }
@@ -91,7 +91,7 @@
             }
         }
 
-        .formContainer {
+        .form {
             display: flex;
             flex-direction: column;
         }
@@ -139,7 +139,7 @@
             cursor: pointer;
         }
 
-        .formContainer a {
+        .form a {
             font-size: var(--small-text);
 
             font-weight: var(--bold-text);
@@ -175,19 +175,17 @@
 </head>
 
 <body>
-<div class="loginContainer">
-    <div class="loginInterface">
+<div class="container">
+    <div class="formContainer">
         <img class="logo" src="./logos/logo_yard_sale.svg" alt="logo Yard Sale">
-        <div class="formContainer">
-            <form class="formContainer" action="#" method="post">
+            <form class="form" action="#" method="post">
                 <label class="form__label" for="email">Email address </label>
                 <input class="form__input" type="text" name="email" id="email" placeholder="name@example.com" required>
                 <label class="form__label" for="password">Password</label>
                 <input class="form__input" type="password" name="password" id="password" placeholder="************" required>
                 <input class="login_button" type="submit" name="submit" value="Log in">
+                <a href="/">Forgot my password</a>
             </form>
-            <a href="/">Forgot my password</a>
-        </div>
         <button class="buttonSignUp">Sign Up</button>
     </div>
 </div>
