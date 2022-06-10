@@ -73,6 +73,7 @@
             justify-self: center;
 
             width: 70%;
+            margin-top: 70px;
             margin-bottom: 40px;
         }
 
@@ -81,17 +82,25 @@
                 display: block;
             }
 
+            .formContainer {
+                height: 100%;
+            }
+
+            .form {
+                height: 100%;
+                justify-content: space-between;
+            }
+            /*
             .buttonSignUp {
-
-                /* margin-top: 100px; */
-
                 width: inherit;
                 position: relative;
                 top: 7vh;
             }
+            */
         }
 
-        .form {
+        .form,
+        .form div {
             display: flex;
             flex-direction: column;
         }
@@ -148,7 +157,9 @@
             text-decoration: none;
             text-align: center;
 
-            margin-bottom: 60px;
+            margin-bottom: 40px;
+
+            cursor: pointer;
         }
 
         .buttonSignUp {
@@ -164,6 +175,7 @@
             width: 100%;
             height: 60px;
             padding: 10px;
+            margin-bottom: 30px;
 
 
             cursor: pointer;
@@ -179,14 +191,16 @@
     <div class="formContainer">
         <img class="logo" src="./logos/logo_yard_sale.svg" alt="logo Yard Sale">
             <form class="form" action="#" method="post">
-                <label class="form__label" for="email">Email address </label>
-                <input class="form__input" type="text" name="email" id="email" placeholder="name@example.com" required>
-                <label class="form__label" for="password">Password</label>
-                <input class="form__input" type="password" name="password" id="password" placeholder="************" required>
-                <input class="login_button" type="submit" name="submit" value="Log in">
-                <a href="/">Forgot my password</a>
+                <div>
+                    <label class="form__label" for="email">Email address </label>
+                    <input class="form__input" type="text" name="email" id="email" placeholder="name@example.com" required>
+                    <label class="form__label" for="password">Password</label>
+                    <input class="form__input" type="password" name="password" id="password" placeholder="************" required>
+                    <input class="login_button" type="submit" name="submit" value="Log in">
+                    <a href="/">Forgot my password</a>
+                </div>
+                <button class="buttonSignUp">Sign Up</button>
             </form>
-        <button class="buttonSignUp">Sign Up</button>
     </div>
 </div>
 </body>
