@@ -49,6 +49,7 @@
 
             /* --->> Card Size <<--- */
             --card-width: 240px;
+            --card-media-width: 140px;
         }
 
         body {
@@ -61,8 +62,6 @@
             display: grid;
             grid-template-columns: repeat(auto-fill, var(--card-width));
             gap: 20px;
-
-
             /*
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
              */
@@ -87,6 +86,20 @@
 
         .card-image {
             margin: 0;
+        }
+
+        @media screen and (max-width: 640px) {
+            .cards-container {
+                grid-template-columns: repeat(auto-fill, var(--card-media-width));
+            }
+
+            .card {
+                width: var(--card-media-width);
+            }
+            .card-body img {
+                width: var(--card-media-width);
+                height: var(--card-media-width);
+            }
         }
 
     </style>
