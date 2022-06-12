@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Desktop Menu</title>
+    <style>
+        /* Global */
+        /*** The alternative CSS box model ***/
+
+        html {
+            box-sizing: border-box;
+        }
+
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
+
+        :root {
+
+            /* --->> Colors <<--- */
+            --white: #FFFFFF;
+            --black: #000000;
+            --dark: #232830;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+
+            /* --->> Font Sizes <<--- */
+            --small-text: 19px;
+            --medium-text: 22px;
+            --large-text: 24px;
+
+            /* --->> Font Weights <<--- */
+            --light-weight: 300;
+            --regular-weight: 400;
+            --medium-weight: 500;
+            --bold-text: 700;
+
+            /* --->> Font Families <<--- */
+            --primary-font: 'Quicksand', sans-serif;
+            --secondary-font: 'Roboto', sans-serif;
+
+            /* --->> Card Size <<--- */
+            --card-width: 240px;
+            --card-media-width: 140px;
+        }
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+
+        }
+    </style>
+</head>
+<body>
+<div class="desktop-menu">
+    <ul>
+        <li>
+            <a class="text-menu" href="/">My orders</a>
+        </li>
+        <li>
+            <a class="text-menu" href="/">My account</a>
+        </li>
+        <li>
+            <a href="/">Sign out</a>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>
