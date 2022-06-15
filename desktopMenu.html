@@ -53,16 +53,59 @@
             margin: 0;
 
         }
+
+        .desktop-menu {
+            width: 200px;
+            height: auto;
+
+            border: 1px solid var(--very-light-pink);
+            border-radius: 6px;
+
+            padding: 20px 20px 0 20px;
+        }
+
+        .desktop-menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .desktop-menu ul li {
+            text-align: end;
+            font-weight: var(--bold-text);
+        }
+
+        .desktop-menu ul li:last-child {
+            padding-top: 20px;
+            border-top: 1px solid var(--very-light-pink);
+        }
+
+        .desktop-menu ul li:last-child a {
+            color: var(--hospital-green);
+
+            display: inline-block;
+            padding:20px;
+        }
+
+        .desktop-menu ul li a {
+            text-decoration: none;
+            color: var(--dark);
+            font-size: var(--small-text);
+            font-weight: var(--bold-text);
+            padding: 10px;
+            display: block;
+        }
+
     </style>
 </head>
 <body>
 <div class="desktop-menu">
     <ul>
         <li>
-            <a class="text-menu" href="/">My orders</a>
+            <a href="/">My orders</a>
         </li>
         <li>
-            <a class="text-menu" href="/">My account</a>
+            <a href="/">My account</a>
         </li>
         <li>
             <a href="/">Sign out</a>
