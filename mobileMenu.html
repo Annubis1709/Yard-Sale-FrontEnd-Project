@@ -1,62 +1,80 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Mobile Menu</title>
-    <style>
-        /* Global */
-        /*** The alternative CSS box model ***/
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Mobile Menu</title>
+        <style>
+            /* Global */
+            /*** The alternative CSS box model ***/
 
-        html {
-            box-sizing: border-box;
-        }
+            html {
+                box-sizing: border-box;
+            }
 
-        *, *:before, *:after {
-            box-sizing: inherit;
-        }
+            *, *:before, *:after {
+                box-sizing: inherit;
+            }
 
-        :root {
+            :root {
 
-            /* --->> Colors <<--- */
-            --white: #FFFFFF;
-            --black: #000000;
-            --dark: #232830;
-            --very-light-pink: #C7C7C7;
-            --text-input-field: #F7F7F7;
-            --hospital-green: #ACD9B2;
+                /* --->> Colors <<--- */
+                --white: #FFFFFF;
+                --black: #000000;
+                --dark: #232830;
+                --very-light-pink: #C7C7C7;
+                --text-input-field: #F7F7F7;
+                --hospital-green: #ACD9B2;
 
-            /* --->> Font Sizes <<--- */
-            --small-text: 19px;
-            --medium-text: 22px;
-            --large-text: 24px;
+                /* --->> Font Sizes <<--- */
+                --small-text: 19px;
+                --medium-text: 22px;
+                --large-text: 24px;
 
-            /* --->> Font Weights <<--- */
-            --light-weight: 300;
-            --regular-weight: 400;
-            --medium-weight: 500;
-            --bold-text: 700;
+                /* --->> Font Weights <<--- */
+                --light-weight: 300;
+                --regular-weight: 400;
+                --medium-weight: 500;
+                --bold-text: 700;
 
-            /* --->> Font Families <<--- */
-            --primary-font: 'Quicksand', sans-serif;
-            --secondary-font: 'Roboto', sans-serif;
+                /* --->> Font Families <<--- */
+                --primary-font: 'Quicksand', sans-serif;
+                --secondary-font: 'Roboto', sans-serif;
 
-            /* --->> Card Size <<--- */
-            --card-width: 240px;
-            --card-media-width: 140px;
-        }
+                /* --->> Card Size <<--- */
+                --card-width: 240px;
+                --card-media-width: 140px;
+            }
 
-        body {
-            font-family: 'Quicksand', sans-serif;
-            margin: 0;
+            body {
+                font-family: 'Quicksand', sans-serif;
+                margin: 0;
 
-        }
+            }
 
-    </style>
-</head>
-<body>
+        </style>
+    </head>
+    <body>
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="/">CATEGORIES</a></li>
+            <li><a href="/">Clothes</a></li>
+            <li><a href="/">Electronics</a></li>
+            <li><a href="/">Furnitures</a></li>
+            <li><a href="/">Toys</a></li>
+            <li><a href="/">Others</a></li>
+        </ul>
+        <ul>
+            <li><a href="/">My orders</a></li>
+            <li><a href="/">My account</a></li>
+        </ul>
+        <ul>
+            <li><a href="/">example@example.com</a></li>
+            <li><a href="/">Sign out</a></li>
+        </ul>
+    </div>
 
-</body>
+    </body>
 </html>
