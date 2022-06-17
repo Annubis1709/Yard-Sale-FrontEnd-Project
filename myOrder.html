@@ -43,7 +43,13 @@
                 /* --->> Font Families <<--- */
                 --primary-font: 'Quicksand', sans-serif;
                 --secondary-font: 'Roboto', sans-serif;
+
+                /* --->> Card Size <<--- */
+                --card-width: 240px;
+                --card-height: 240px;
+                --card-media-width: 140px;
             }
+
 
             body {
                 font-family: 'Quicksand', sans-serif;
@@ -71,6 +77,13 @@
             .my-order-content {
                 display: flex;
                 flex-direction: column;
+            }
+
+            .shopping-cart-container figure img {
+                width: var(--card-width);
+                height: var(--card-height);
+                border-radius: 40px;
+                object-fit: cover;
             }
 
         </style>
