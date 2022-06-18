@@ -53,37 +53,96 @@
             font-family: 'Quicksand', sans-serif;
             margin: 0;
         }
+
+        /* --->> Navigation Bar <<--- */
+
+        .nav-bar-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 24px;
+            margin-top: 20px;
+        }
+
+        .nav-bar-Menu {
+            display: none;
+        }
+
+        .nav-bar-left {
+            display: flex;
+        }
+
+        .nav-bar-left ul {
+            margin-left: 13px;
+        }
+
+        .nav-bar-left ul li a,
+        .nav-bar-right ul li a {
+            padding: 8px;
+            margin: 0;
+
+            font-size: var(--medium-text);
+            font-weight: var(--bold-text);
+
+            text-decoration: none;
+            color: var(--very-light-pink);
+
+            border: 1px solid var(--white);
+            border-radius: 10px;
+        }
+
+
+        .nav-bar-left ul li a:hover,
+        .nav-bar-right ul li a:hover {
+            color: var(--hospital-green);
+
+            border: 1px solid var(--hospital-green);
+        }
+
+        .logo {
+            width: 100px;
+            margin-right: 20px;
+        }
+
+        .nav-bar-left ul,
+        .nav-bar-right ul {
+            display: flex;
+            align-items: center;
+
+            padding: 0;
+            margin: 0;
+
+            list-style: none;
+        }
     </style>
 </head>
 <body>
-<nav class="nav-bar">
-    <div class="nav-bar-container">
-        <div class="nav-bar-Menu">
-            <a href="index.html">
-                <img src="resources/icons/icon_menu.svg" alt="menu">
-            </a>
-        </div>
-        <div class="nav-bar-left">
-            <img src="resources/logos/logo_yard_sale.svg" alt="logo" class="logo">
-            <ul>
-                <li><a href="index.html">All</a></li>
-                <li><a href="/">Clothes</a></li>
-                <li><a href="/">Electronics</a></li>
-                <li><a href="/">Funiture</a></li>
-                <li><a href="/">Toys</a></li>
-                <li><a href="/">Others</a></li>
-            </ul>
-        </div>
-        <div class="nav-bar-right">
-            <ul>
-                <li>example@example.com</li>
-                <li>
-                    <a href="myOrders.html">
-                        <img src="resources/icons/icon_shopping_cart.svg" alt="icon shopping cart">
-                    </a>
-                </li>
-            </ul>
-        </div>
+
+<nav class="nav-bar-container">
+    <div class="nav-bar-Menu">
+        <a href="index.html">
+            <img src="resources/icons/icon_menu.svg" alt="menu">
+        </a>
+    </div>
+    <div class="nav-bar-left">
+        <img src="resources/logos/logo_yard_sale.svg" alt="logo" class="logo">
+        <ul>
+            <li><a href="index.html">All</a></li>
+            <li><a href="/">Clothes</a></li>
+            <li><a href="/">Electronics</a></li>
+            <li><a href="/">Funiture</a></li>
+            <li><a href="/">Toys</a></li>
+            <li><a href="/">Others</a></li>
+        </ul>
+    </div>
+    <div class="nav-bar-right">
+        <ul>
+            <li>example@example.com</li>
+            <li>
+                <a href="myOrders.html">
+                    <img src="resources/icons/icon_shopping_cart.svg" alt="icon shopping cart">
+                </a>
+            </li>
+        </ul>
     </div>
 </nav>
 
