@@ -60,6 +60,7 @@
             display: flex;
             justify-content: space-between;
             padding: 0 24px;
+            border-bottom: 1px solid var(--very-light-pink);
         }
 
         .navbar-menu {
@@ -139,6 +140,20 @@
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+
+        @media (max-width: 640px) {
+            .navbar-menu {
+                display: block;
+            }
+
+            .navbar-left ul {
+                display: none;
+            }
+
+            .navbar-email {
+                display: none;
+            }
         }
     </style>
 </head>
