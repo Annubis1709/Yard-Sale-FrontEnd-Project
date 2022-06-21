@@ -54,11 +54,13 @@
             margin: 0;
         }
 
-        /* --->> Button Add to cart <<--- */
-
+        
         .product-detail {
             width: 360px;
+        
         }
+        
+        /* --->> Card <<--- */
 
         .close-icon:hover {
             cursor: pointer;
@@ -79,6 +81,26 @@
         .product-img {
             width: 100%;
             height: 360px;
+            object-fit: cover;
+            border-radius: 0 0 20px 20px;
+        }
+
+        .card-price {
+            font-size: var(--medium-text);
+            font-weight: var(--bold-text);
+            color: var(--dark);
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+
+        .card-title {
+            font-size: var(--medium-text);
+            font-weight: var(--bold-text);
+
+            color: var(--very-light-pink);
+            
+            margin-top: 0;
+            margin-bottom: 30px;
         }
 
         .card-button {
@@ -114,8 +136,8 @@
             <img src="./resources/icons/icon_close.png" alt="close icon" class="close-icon">
             <img src="https://images.pexels.com/photos/2393835/pexels-photo-2393835.jpeg?cs=srgb&dl=pexels-nishant-aneja-2393835.jpg&fm=jpg" alt="blue classic motorbike" class="product-img">
             <div class="card-body">
-                <h1 class="card-title">Blue Classic Motorbike</h1>
                 <p class="card-price">$24.000,00</p>
+                <h1 class="card-title">Blue Classic Motorbike</h1>
                 <p class="card-description">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Donec euismod, nisi vel consectetur consectetur, nisl nisi
