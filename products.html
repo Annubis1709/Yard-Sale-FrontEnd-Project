@@ -65,7 +65,7 @@
         
         }
         
-        /* --->> Card <<--- */
+        /* --->> Card Header <<--- */
 
         .close-icon:hover {
             cursor: pointer;
@@ -89,6 +89,37 @@
             object-fit: cover;
             border-radius: 0 0 20px 20px;
         }
+
+        /* --->> Points Card <<--- */
+
+        .points ul {
+            display: flex;
+            justify-content: center;                        
+        }
+
+        .points li {
+            list-style: none;
+            margin: 0 10px;
+        }
+
+        .points li button {
+            background-color: var(--very-light-pink);
+
+            border: none;
+            border-radius: 50%;
+
+            width: 10px;
+            height: 10px;
+            padding: 0;
+            
+            cursor: pointer;
+        }
+
+        .points ul li:first-child button {
+            background-color: var(--hospital-green);
+        }
+
+        /* --->> Card Body <<--- */
 
         .card-body {
 
@@ -163,6 +194,19 @@
         <div class="card">
             <img src="./resources/icons/icon_close.png" alt="close icon" class="close-icon">
             <img src="https://images.pexels.com/photos/2393835/pexels-photo-2393835.jpeg?cs=srgb&dl=pexels-nishant-aneja-2393835.jpg&fm=jpg" alt="blue classic motorbike" class="product-img">
+            <div class="points">
+                <ul>
+                    <li>
+                        <button></button>
+                    </li>
+                    <li>
+                        <button></button>
+                    </li>
+                    <li>
+                        <button></button>
+                    </li>
+                </ul>
+            </div>
             <div class="card-body">
                 <p class="card-price">$6.600,00</p>
                 <h1 class="card-title">Blue Classic Motorbike</h1>
