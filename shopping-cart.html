@@ -86,11 +86,11 @@
         grid-template-columns: auto 1fr;
         gap: 16px;
         align-items: center;
-        
+
         background-color: var(--text-input-field);
         border-radius: 8px;
         padding: 0 24px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
       }
 
       .order p:first-child {
@@ -135,6 +135,29 @@
         font-size: var(--medium-text);
         font-weight: var(--bold-text);
       }
+
+      .checkout-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-size: var(--medium-text);
+        font-weight: var(--bold-text);
+
+        color: var(--white);
+        background-color: var(--hospital-green);
+
+        border: none;
+        border-radius: 8px;
+
+        width: 100%;
+        height: 60px;
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+
+        cursor: pointer;
+      }
     </style>
   </head>
   <body>
@@ -151,6 +174,7 @@
             </figure>
             <p class="article-name">Classic Motorbike</p>
             <p class="price">$560.00</p>
+            <img src="./resources/icons/icon_close.png" alt="icon close" />
           </div>
           <div class="shopping-cart-container">
             <figure class="shopping-cart-image">
@@ -161,6 +185,7 @@
             </figure>
             <p class="article-name">Classic Motorbike</p>
             <p class="price">$560.00</p>
+            <img src="./resources/icons/icon_close.png" alt="icon close" />
           </div>
           <div class="shopping-cart-container">
             <figure class="shopping-cart-image">
@@ -171,6 +196,7 @@
             </figure>
             <p class="article-name">Classic Motorbike</p>
             <p class="price">$560.00</p>
+            <img src="./resources/icons/icon_close.png" alt="icon close" />
           </div>
           <div class="shopping-cart-container">
             <figure class="shopping-cart-image">
@@ -181,6 +207,7 @@
             </figure>
             <p class="article-name">Classic Motorbike</p>
             <p class="price">$560.00</p>
+            <img src="./resources/icons/icon_close.png" alt="icon close" />
           </div>
           <div class="shopping-cart-container">
             <figure class="shopping-cart-image">
@@ -191,31 +218,13 @@
             </figure>
             <p class="article-name">Classic Motorbike</p>
             <p class="price">$560.00</p>
-          </div>
-          <div class="shopping-cart-container">
-            <figure class="shopping-cart-image">
-              <img
-                src="https://images.pexels.com/photos/2396050/pexels-photo-2396050.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt="classic motorbike"
-              />
-            </figure>
-            <p class="article-name">Classic Motorbike</p>
-            <p class="price">$560.00</p>
-          </div>
-          <div class="shopping-cart-container">
-            <figure class="shopping-cart-image">
-              <img
-                src="https://images.pexels.com/photos/2396050/pexels-photo-2396050.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt="classic motorbike"
-              />
-            </figure>
-            <p class="article-name">Classic Motorbike</p>
-            <p class="price">$560.00</p>
+            <img src="./resources/icons/icon_close.png" alt="icon close" />
           </div>
           <div class="order">
             <p>Total</p>
             <p>$560.00</p>
           </div>
+          <button class="checkout-button">Checkout</button>
         </div>
       </div>
     </div>
